@@ -1,0 +1,20 @@
+<div
+  id="profile-menu"
+  role="menu"
+  data-dropdown-target="menu"
+  aria-orientation="vertical"
+  aria-labelledby="menu-button"
+  tabindex="-1"
+  class="hidden origin-top-right absolute top-[40px] right-0 mt-2 w-[160px] rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none"
+>
+  <div class="py-1" role="none">
+    <%= link_to 'Profile', root_path, tabindex: "-1", role: "menuitem", id: "menu-item-0",
+                class: 'block px-4 py-2 text-sm hover:bg-gray-100 text-gray-700 hover:text-gray-900' %>
+    <%= link_to 'Settings', root_path, role: "menuitem", tabindex: "-1", id: "menu-item-1",
+                class: 'block px-4 py-2 text-sm hover:bg-gray-100 text-gray-700 hover:text-gray-900' %>
+  </div>
+  <div class="py-1">
+    <%= link_to 'Sign Out', root_path, role: "menuitem", tabindex: "-1", id: "menu-item-2",
+                class: 'block px-4 py-2 text-sm hover:bg-gray-100 text-gray-700 hover:text-gray-900'%>
+  </div>
+</div>

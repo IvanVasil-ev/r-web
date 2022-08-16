@@ -30,7 +30,7 @@ async function builder() {
   })
 
   chokidar
-    .watch(["./app/javascript/**/*.js", "./app/views/**/*.html.erb", "./app/assets/stylesheets/*.scss"])
+    .watch(["./app/javascript/**/*.js", "./app/views/**/*.html.erb", "./app/assets/stylesheets/*.css"])
     .on('all', (event, path) => {
       if (path.includes("javascript")) {
         result.rebuild();
